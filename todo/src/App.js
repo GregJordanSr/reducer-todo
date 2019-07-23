@@ -1,10 +1,9 @@
 import React, { useReducer} from 'react';
 import { reducer, initialState } from './reducers/reducer';
-
-
+import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
 
 import './App.css';
-import TodoList from './components/TodoList';
 
 function App() {
 
@@ -16,8 +15,7 @@ function App() {
   };
 
   const toggleTodo = todoItem => {
-    e.preventDefault();
-    dispatch({ type: 'TODO_ITEM', payload: todoItem });
+    dispatch({ type: 'TOGGLE_TODO', payload: todoItem });
   };
 
   const clearCompleted = e => {
@@ -26,7 +24,6 @@ function App() {
   };
 
 
-  
   return (
     <div className="App">
       <div className="todo-header">

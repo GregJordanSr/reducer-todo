@@ -1,11 +1,12 @@
 import React from 'react';
-import initialState from '../reducers/reducer';
+import TodoItem from './TodoItem';
+
 
 
  const TodoList = (props)  => {
     return (
         <div>
-            
+            <TodoItem />
         </div>
     )
 }
