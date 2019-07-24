@@ -1,5 +1,6 @@
 import React from 'react';
 import TodoItem from './TodoItem';
+import { Button } from 'semantic-ui-react'
 
 
 
@@ -10,9 +11,9 @@ import TodoItem from './TodoItem';
             {props.todoData.todoList.map(todo => (
                 <TodoItem key={todo.id} todo={todo} toggleTodo={props.toggleTodo} />
                 ))}
-            <button className="clr-btn" onClick={props.clearCompleted}>
+            <Button primary onClick={props.clearCompleted}>
                 Clear Completed Todo
-            </button>
+            </Button>
         </div>
     )
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Form, Button, Divider } from 'semantic-ui-react';
 
 
 const TodoForm = props =>  {
@@ -15,16 +16,20 @@ const TodoForm = props =>  {
     };
     
     return (
-        <form onSubmit={submitTodo} >
-            <input
+        <Form onSubmit={submitTodo} >
+            <Form.Field>
+                <input
                 type='text'
                 value={inputForm.item}
                 name='item'
                 placeholder="Add Todo"
                 onChange={handleChange}
-                />
-            <button>Add Todo</button>
-        </form>
+                /> 
+            </Form.Field>
+           
+            <Button primary className="add-btn" >Add Todo</Button>
+            <Divider hidden />
+        </Form>
     )
 }
 export default TodoForm;

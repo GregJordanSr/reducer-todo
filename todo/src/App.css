@@ -23,16 +23,18 @@
   color: #61dafb;
 }
 
-.item {
+/* .item {
   background-color: #e64944;
   width: 45%;
   text-align: left;
   margin: 4px 0;
   padding-left: 8px;
+} */
+ button.us.primary.button.add-btn {
+  margin-bottom: 50px;
 }
-
 .complete {
-  background-color: #251a19;
+  background-color: #b1b1bb;
   text-decoration: line-through;
 }
 
