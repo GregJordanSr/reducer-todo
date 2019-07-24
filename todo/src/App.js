@@ -31,7 +31,7 @@ function App() {
           <TodoForm addTodo={addTodo} />
       </div>
       <TodoList 
-          todoData={state.todoData} 
+          todoData={state} 
           toggleTodo={toggleTodo}
           clearCompleted={clearCompleted} 
         />
