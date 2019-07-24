@@ -10,8 +10,8 @@ const TodoForm = props =>  {
 
     const submitTodo = e => {
         e.preventDefault();
-        setInput( '' );
         props.addTodo(e, inputForm.item);
+        setInput( { item: '' } );
     };
     
     return (
